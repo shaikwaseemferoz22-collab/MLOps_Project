@@ -47,26 +47,26 @@ Designation = st.selectbox("Designation", ["Executive", "Managerial", "Professio
 ProductPitched = st.selectbox("Product Pitched", ["Deluxe", "Standard", "Basic"])
 
 
-# Assemble input into DataFrame
+# Assemble input into DataFrame with correct column names matching the model's expectations
 input_data = pd.DataFrame([{
     'Age': Age,
-    'City Tier': CityTier,
-    'Number of Person Visiting': NumberOfPersonVisiting,
-    'Preferred Property Star': PreferredPropertyStar,
-    'Number of Trips': NumberOfTrips,
+    'CityTier': CityTier, # Corrected
+    'NumberOfPersonVisiting': NumberOfPersonVisiting, # Corrected
+    'PreferredPropertyStar': PreferredPropertyStar, # Corrected
+    'NumberOfTrips': NumberOfTrips, # Corrected
     'Passport': Passport,
-    'Own Car': OwnCar,
-    'Number of Children Visiting': NumberOfChildrenVisiting,
-    'Monthly Income': MonthlyIncome,
-    'Pitch Satisfaction Score': PitchSatisfactionScore,
-    'Number of Followups': NumberOfFollowups,
-    'Duration of Pitch': DurationOfPitch,
-    'Type of Contact': TypeofContact,
+    'OwnCar': OwnCar, # Corrected
+    'NumberOfChildrenVisiting': NumberOfChildrenVisiting, # Corrected
+    'MonthlyIncome': MonthlyIncome, # Corrected
+    'PitchSatisfactionScore': PitchSatisfactionScore, # Corrected
+    'NumberOfFollowups': NumberOfFollowups, # Corrected
+    'DurationOfPitch': DurationOfPitch, # Corrected
+    'TypeofContact': TypeofContact, # Corrected
     'Occupation': Occupation,
     'Gender': Gender,
-    'Marital Status': MaritalStatus,
+    'MaritalStatus': MaritalStatus, # Corrected
     'Designation': Designation,
-    'Product Pitched': ProductPitched
+    'ProductPitched': ProductPitched # Corrected
 }])
 
 
